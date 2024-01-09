@@ -1,2 +1,8 @@
-<p>login works!</p>
-<p>Coucou bibou</p>
+<form [formGroup]="loginForm" (submit)="login()">
+  <label for="username">username:</label>
+  <input type="text" id="username" formControlName="username"><br><br>
+  <label for="password">Password</label>
+  <input type="password" id="password" formControlName="password"><br><br>
+  <button>Envoyer</button>
+  <p *ngIf="errorMessage">{{errorMessage}}</p>
+</form>

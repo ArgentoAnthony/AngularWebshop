@@ -14,6 +14,7 @@ import { AdminUpdateComponent } from './admin-update/admin-update.component';
 import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { GetUserComponent } from './get-user/get-user.component';
 import { DetailsUserComponent } from './details-user/details-user.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { DetailsUserComponent } from './details-user/details-user.component';
   ],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class UserModule { }
